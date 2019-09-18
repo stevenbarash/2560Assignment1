@@ -1,0 +1,26 @@
+.header {
+  background-color: #aec6cf;
+  padding: 5%;
+  height: 10em;
+  top: 0px;
+}
+.title {
+  font-size: 30px;
+
+  font-family: "Hepta Slab", serif;
+}
+
+.recipe-body li {
+  font-family: "PT Serif", serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
