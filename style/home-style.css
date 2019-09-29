@@ -1,0 +1,18 @@
+.profile-pic {
+  height: 300;
+  width: 300px;
+}
+
+.title-area {
+  display: flex;
+
+  width: 100%;
+}
+
+.introduction {
+  display: flex;
+  flex: 2;
+
+  flex-direction: column;
+}
+
