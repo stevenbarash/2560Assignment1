@@ -5,10 +5,12 @@
 .food-pics img {
   height: 260px;
   width: 260px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 0.5s;
 }
 
 .food-pics img:hover {
-  position: absolute;
+  position: relative;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 0.5s;
   height: 400px;

@@ -16,3 +16,10 @@
   flex-direction: column;
 }
 
+.social-links {
+  display: flex;
+}
+.social-links img {
+  height: 50px;
+  width: 50px;
+}
