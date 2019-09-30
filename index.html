@@ -4,25 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,hebrew"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
-      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/home-style.css" />
+    <script src="./js/script.js"></script>
 
     <title>Steven Barash</title>
   </head>
   <body>
-    <nav></nav>
+    <a onclick="toggleNightMode()">
+      <img
+        class="night-mode-button night-mode-button-home"
+        src="./assets/moon.svg"
+      />
+    </a>
+    <nav>
+      <a class="nav-steven nav-item" href="./index.html">Steven Barash</a>
+      <ul>
+        <!-- <li><a href="./pages/">Home</a></li> -->
+        <li><a class="nav-item" href="./pages/food.html">Food</a></li>
+        <li><a class="nav-item" href="./pages/languages.html">Languages</a></li>
+        <li><a class="nav-item" href="./pages/photos.html">Photos</a></li>
+        <li><a class="nav-item" href="./pages/coffee.html">Coffee</a></li>
+      </ul>
+    </nav>
     <div class="title-area">
       <div class="introduction">
         <h1>
           Hey, I'm Steven
         </h1>
         <p>I like to program, learn languages, and take pictures.</p>
+        <p>
+          I'm currently a 4<sup>th</sup> year undergraduate student at the
+          University of Pittsburgh studying Information Science. I hope to
+          become a Front End or Full Stack Developer after I graduate
+          (hopefully) this April.
+        </p>
       </div>
       <div>
         <img
@@ -30,11 +52,43 @@
           src="./assets/58375246_2359257714305909_4351721126993330176_o.jpg"
         />
       </div>
-      <div class="social-links">
-        <img src="./assets/github.svg" alt="github" />
-        <img src="./assets/linkedin.svg" alt="linkedin" />
-        <img src="./assets/instagram.svg" alt="instagram" />
-      </div>
+    </div>
+    <h4>You can find me on these sites:</h4>
+    <div class="social-links">
+      <a href="https://www.github.com/stevenbarash/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M386 53a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm0 0M256 106a170 170 0 1 0 0 340 170 170 0 0 0 0-340zm-31 317l1-7v-40c0-14 5-17 11-26a10 10 0 0 0-7-15c-40-6-55-26-61-42-8-22-4-49 10-66 2-2 4-7 3-11-3-9-3-24-1-30 9 2 17 6 26 12 5 3 9 6 15 5 12-4 23-5 34-5s22 1 34 5c6 1 10-2 15-5 9-6 17-10 26-12 2 6 2 21-1 30-1 4 1 9 3 11 14 17 18 44 10 66-6 16-21 36-61 42a10 10 0 0 0-7 15c6 9 11 12 11 26v40l1 7a151 151 0 0 1-62 0zm81-6v-41c0-11-3-19-6-24 31-9 52-27 62-52 10-27 6-60-11-82 3-14 3-36-5-45-3-5-8-7-13-7-16 1-28 9-41 17a155 155 0 0 0-36-5c-12 0-24 1-36 5-13-8-25-16-41-17-5 0-10 2-13 7-8 9-8 31-5 45a88 88 0 0 0-11 82c10 25 31 43 62 52-3 4-5 10-6 17-12 5-22 2-29-10-8-13-21-24-37-22a10 10 0 0 0 2 20c7-1 14 6 18 13 11 18 28 24 46 20v27a150 150 0 1 1 100 0zm0 0"
+          />
+          <path
+            d="M462 0H50C22 0 0 22 0 50v412c0 28 22 50 50 50h412c28 0 50-22 50-50V50c0-28-22-50-50-50zm30 462c0 17-13 30-30 30H50c-17 0-30-13-30-30V50c0-17 13-30 30-30h412c17 0 30 13 30 30zm0 0"
+          />
+          <path d="M136 63h200a10 10 0 1 0 0-20H136a10 10 0 1 0 0 20zm0 0" />
+        </svg>
+        <!-- <img src="./assets/github.svg" alt="github" /> -->
+      </a>
+      <a href="https://www.linkedin.com/in/stevenbarash/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M437 0H75C34 0 0 34 0 75v362c0 41 34 75 75 75h362c41 0 75-34 75-75V75c0-41-34-75-75-75zm45 437c0 25-20 45-45 45H75c-25 0-45-20-45-45V75c0-25 20-45 45-45h362c25 0 45 20 45 45zm0 0"
+          />
+          <path
+            d="M91 422h90V210H91zm30-182h30v152h-30zm0 0M331 210c-10 0-20 2-30 5v-5h-90v212h90V315a15 15 0 0 1 30 0v107h90V305c0-49-39-95-90-95zm60 182h-30v-77a45 45 0 0 0-90 0v77h-30V240h30v30l24-18c10-8 23-12 36-12 32 0 60 30 60 65zm0 0M91 180h90V90H91zm30-60h30v30h-30zm0 0"
+          />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/stevenbarash/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M352 0H160C72 0 0 72 0 160v192c0 88 72 160 160 160h192c88 0 160-72 160-160V160C512 72 440 0 352 0zm112 352c0 62-50 112-112 112H160c-62 0-112-50-112-112V160C48 98 98 48 160 48h192c62 0 112 50 112 112v192z"
+          />
+          <path
+            d="M256 128a128 128 0 1 0 0 256 128 128 0 0 0 0-256zm0 208a80 80 0 1 1 0-160 80 80 0 0 1 0 160z"
+          />
+          <circle cx="394" cy="118" r="17" />
+        </svg>
+        <!-- <img src="./assets/instagram.svg" alt="instagram" /> -->
+      </a>
     </div>
   </body>
 </html>
